@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Bookcard from './components/bookcard';
 
 function App() {
   const books = [
@@ -37,7 +38,7 @@ function App() {
   return <>{
     <div className="product-list">
       {books.map((books) => (
-        <productcard
+        <Bookcard
           key={books.id}
           image={books.image}
           name={books.name}
